@@ -13,7 +13,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "example" {
-  bucket = "sasinick-tf-bucketdemo"
+  bucket = var.bucketName
 
   tags = {
     Name        = "My bucket"
