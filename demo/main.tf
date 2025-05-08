@@ -1,3 +1,7 @@
+variable "bucketName" {
+  type = string
+}
+
 terraform {
   required_providers {
     aws = {
